@@ -37,7 +37,9 @@
                                     <constraint firstAttribute="height" constant="30" id="P2s-MK-vzZ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="aNo-02-Kw0"/>
                                 </constraints>
-                                <state key="normal" title="Say It!"/>
+                                <state key="normal" title="Say It!">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="sayItButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUY-JB-Br5"/>
                                 </connections>
