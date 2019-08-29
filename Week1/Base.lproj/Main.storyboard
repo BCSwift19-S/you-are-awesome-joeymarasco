@@ -29,31 +29,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUN-rD-ftz">
-                                <rect key="frame" x="16" y="148" width="108" height="30"/>
+                                <rect key="frame" x="106" y="148" width="108" height="30"/>
                                 <state key="normal" title="Show Message!"/>
                                 <connections>
                                     <action selector="sayItButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0z-Zn-bLv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVU-KT-WQ2">
-                                <rect key="frame" x="132" y="148" width="174" height="30"/>
-                                <state key="normal" title="Show Another Messsage!"/>
-                                <connections>
-                                    <action selector="showAnotherMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NhK-TU-66L"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UUd-Yo-OMg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Oz-GQ-fnk"/>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="8y9-Mx-INl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GUN-rD-ftz" secondAttribute="trailing" constant="106" id="Gwj-FM-bHa"/>
                             <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="117" id="H4l-ML-Irv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rVU-KT-WQ2" secondAttribute="trailing" constant="14" id="HWs-Bn-l4i"/>
                             <constraint firstItem="UUd-Yo-OMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Iqc-nb-xDh"/>
                             <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="ItD-I0-rqd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UUd-Yo-OMg" secondAttribute="trailing" constant="16" id="NZd-qK-aV0"/>
-                            <constraint firstItem="rVU-KT-WQ2" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="QUZ-qw-foz"/>
                             <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qjp-tR-jK0"/>
-                            <constraint firstItem="rVU-KT-WQ2" firstAttribute="leading" secondItem="GUN-rD-ftz" secondAttribute="trailing" constant="8" id="hSB-4m-bCS"/>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="e0m-lw-0MI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
