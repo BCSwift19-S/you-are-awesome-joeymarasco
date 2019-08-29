@@ -29,30 +29,26 @@
                                 <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gn-5G-Vv6">
-                                <rect key="frame" x="128" y="195" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUN-rD-ftz">
+                                <rect key="frame" x="106" y="148" width="108" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="2Nd-Nc-bKs"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Lwg-gX-Wsc"/>
-                                    <constraint firstAttribute="height" constant="30" id="P2s-MK-vzZ"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="aNo-02-Kw0"/>
+                                    <constraint firstAttribute="width" constant="108" id="hd1-wA-wIg"/>
+                                    <constraint firstAttribute="height" constant="30" id="rs1-Xg-tLU"/>
                                 </constraints>
-                                <state key="normal" title="Say It!">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <state key="normal" title="Show Message!"/>
                                 <connections>
-                                    <action selector="sayItButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUY-JB-Br5"/>
+                                    <action selector="sayItButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0z-Zn-bLv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UUd-Yo-OMg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Oz-GQ-fnk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8gn-5G-Vv6" secondAttribute="trailing" constant="130" id="Hzh-Jc-pMw"/>
                             <constraint firstItem="UUd-Yo-OMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Iqc-nb-xDh"/>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="ItD-I0-rqd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UUd-Yo-OMg" secondAttribute="trailing" constant="16" id="NZd-qK-aV0"/>
-                            <constraint firstItem="8gn-5G-Vv6" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="55" id="haz-JX-elA"/>
-                            <constraint firstItem="8gn-5G-Vv6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="112" id="mK1-qs-3lb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GUN-rD-ftz" secondAttribute="trailing" constant="90" id="h62-fV-cah"/>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="hgi-nB-45c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

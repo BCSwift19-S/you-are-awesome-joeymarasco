@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var showMessage: UIButton!
     
     
     override func viewDidLoad() {
@@ -19,8 +20,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sayItButtonPressed(_ sender: UIButton) {
-         print("you clicked the say it button!")
-        messageLabel.text = "Fabulous!"
+         print("you clicked the show message button!")
+        messageLabel.text = "You Are Also Fabulous!"
     }
     
 }
