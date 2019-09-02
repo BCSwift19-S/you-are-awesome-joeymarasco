@@ -24,7 +24,7 @@ class ViewController: UIViewController {
                     "You Are Great!",
                     "You Are Amazing!",
                     "You Da Bomb!",
-                    "Whats Up, Dude!",
+                    "Whats Up Dude!",
                     "You Are Fabulous!"]
     messageLabel.text = messages[index]
         if index == messages.count - 1 {
