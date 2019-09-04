@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
-    var index = 0
+    var index = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,30 +29,28 @@ class ViewController: UIViewController {
                     "This is the best app ever!",
                     "Go BC!" ]
         
-    messageLabel.text = messages.randomElement()!
         
-        
-//    messageLabel.text = messages[index]
-//        if index == messages.count - 1 {
-//            index = 0} else{
-//            index = index + 1
-//        }
-        
-//        let message1 = "You Are Awesome!"
-//        let message2 = "You Are Great!"
-//        let message3 = "You Are Amazing!"
-//
-//
-//        print("you clicked the show message button!")
-//        if messageLabel.text ==  message1 {
-//            messageLabel.text = message2
-//        } else if messageLabel.text == message2{
-//            messageLabel.text = message3
-//        } else{
-//            messageLabel.text = message1}
-//
-//        messageLabel.textColor = UIColor.red
-//    }
-}
+    var newIndex = -1
 
+        repeat{
+            newIndex = Int.random(in: 0..<messages.count)
+        } while index == newIndex
+
+        index = newIndex
+        messageLabel.text = messages[index]
+
+        
+    // while loop
+//
+//        var newIndex = Int.random(in: 0..<messages.count)
+//
+//        repeat{
+//            newIndex = Int.random(in: 0..<messages.count)
+//        } while index == newIndex
+//
+//        index = newIndex
+//        messageLabel.text = messages[index]
+//
+//
+}
 }
