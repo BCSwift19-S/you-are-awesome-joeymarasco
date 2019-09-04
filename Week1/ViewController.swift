@@ -25,12 +25,18 @@ class ViewController: UIViewController {
                     "You Are Amazing!",
                     "You Da Bomb!",
                     "Whats Up Dude!",
-                    "You Are Fabulous!"]
-    messageLabel.text = messages[index]
-        if index == messages.count - 1 {
-            index = 0} else{
-            index = index + 1
-        }
+                    "You Are Fabulous!",
+                    "This is the best app ever!",
+                    "Go BC!" ]
+        
+    messageLabel.text = messages.randomElement()!
+        
+        
+//    messageLabel.text = messages[index]
+//        if index == messages.count - 1 {
+//            index = 0} else{
+//            index = index + 1
+//        }
         
 //        let message1 = "You Are Awesome!"
 //        let message2 = "You Are Great!"
