@@ -30,22 +30,35 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUN-rD-ftz">
                                 <rect key="frame" x="106" y="148" width="108" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jLj-KB-a93"/>
+                                    <constraint firstAttribute="width" constant="175" id="zPu-fj-UOH"/>
+                                </constraints>
                                 <state key="normal" title="Show Message!"/>
                                 <connections>
                                     <action selector="sayItButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0z-Zn-bLv"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="UmR-Mu-mVc">
+                                <rect key="frame" x="16" y="186" width="288" height="382"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="1ww-Qz-TEj"/>
+                            <constraint firstItem="UmR-Mu-mVc" firstAttribute="top" secondItem="GUN-rD-ftz" secondAttribute="bottom" constant="8" id="32e-T7-pB0"/>
                             <constraint firstItem="UUd-Yo-OMg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Oz-GQ-fnk"/>
+                            <constraint firstItem="UmR-Mu-mVc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5ho-FP-kCd"/>
                             <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="8y9-Mx-INl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GUN-rD-ftz" secondAttribute="trailing" constant="106" id="Gwj-FM-bHa"/>
                             <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="117" id="H4l-ML-Irv"/>
                             <constraint firstItem="UUd-Yo-OMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Iqc-nb-xDh"/>
                             <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="ItD-I0-rqd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UUd-Yo-OMg" secondAttribute="trailing" constant="16" id="NZd-qK-aV0"/>
+                            <constraint firstItem="UmR-Mu-mVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Oqr-PC-Sxq"/>
                             <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qjp-tR-jK0"/>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tmt-Tm-IeX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UmR-Mu-mVc" secondAttribute="trailing" constant="16" id="Yrm-cC-Qhe"/>
                             <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="e0m-lw-0MI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,7 +69,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.75" y="116.19718309859155"/>
+            <point key="canvasLocation" x="138.40000000000001" y="116.00985221674877"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image0" width="4032" height="3024"/>
+    </resources>
 </document>

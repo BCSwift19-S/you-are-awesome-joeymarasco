@@ -30,7 +30,7 @@ class ViewController: UIViewController {
                     "Go BC!" ]
         
         
-    var newIndex = -1
+        var newIndex: Int
 
         repeat{
             newIndex = Int.random(in: 0..<messages.count)
