@@ -39,7 +39,7 @@
                                     <action selector="sayItButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0z-Zn-bLv"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="UmR-Mu-mVc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UmR-Mu-mVc">
                                 <rect key="frame" x="16" y="186" width="288" height="382"/>
                             </imageView>
                         </subviews>
@@ -64,6 +64,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="awesomeImage" destination="UmR-Mu-mVc" id="3ku-um-16x"/>
                         <outlet property="messageLabel" destination="UUd-Yo-OMg" id="de7-N4-3bW"/>
                     </connections>
                 </viewController>
@@ -72,7 +73,4 @@
             <point key="canvasLocation" x="138.40000000000001" y="116.00985221674877"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="image0" width="4032" height="3024"/>
-    </resources>
 </document>
