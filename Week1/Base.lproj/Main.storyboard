@@ -29,10 +29,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUN-rD-ftz">
-                                <rect key="frame" x="106" y="148" width="108" height="30"/>
+                                <rect key="frame" x="191" y="147" width="113" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="jLj-KB-a93"/>
-                                    <constraint firstAttribute="width" constant="175" id="zPu-fj-UOH"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kgh-02-TLl"/>
+                                    <constraint firstAttribute="width" constant="113" id="OTf-a9-o2M"/>
                                 </constraints>
                                 <state key="normal" title="Show Message!"/>
                                 <connections>
@@ -42,35 +42,53 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UmR-Mu-mVc">
                                 <rect key="frame" x="16" y="186" width="288" height="382"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Sound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcm-4Y-38C">
+                                <rect key="frame" x="16" y="153" width="81" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="deU-y2-SbI"/>
+                                    <constraint firstAttribute="width" constant="81" id="f9Q-kZ-ROa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="67l-Lq-nnF">
+                                <rect key="frame" x="103" y="147" width="51" height="31"/>
+                                <connections>
+                                    <action selector="soundSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="8g3-rJ-tiX"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="1ww-Qz-TEj"/>
-                            <constraint firstItem="UmR-Mu-mVc" firstAttribute="top" secondItem="GUN-rD-ftz" secondAttribute="bottom" constant="8" id="32e-T7-pB0"/>
+                            <constraint firstItem="67l-Lq-nnF" firstAttribute="leading" secondItem="Tcm-4Y-38C" secondAttribute="trailing" constant="6" id="0tk-FC-dzF"/>
                             <constraint firstItem="UUd-Yo-OMg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Oz-GQ-fnk"/>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="67l-Lq-nnF" secondAttribute="trailing" constant="39" id="4yi-5q-8zr"/>
                             <constraint firstItem="UmR-Mu-mVc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5ho-FP-kCd"/>
-                            <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="8y9-Mx-INl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GUN-rD-ftz" secondAttribute="trailing" constant="106" id="Gwj-FM-bHa"/>
-                            <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="117" id="H4l-ML-Irv"/>
+                            <constraint firstItem="Tcm-4Y-38C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GhO-de-HE9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GUN-rD-ftz" secondAttribute="trailing" constant="16" id="Gye-Al-bqO"/>
                             <constraint firstItem="UUd-Yo-OMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Iqc-nb-xDh"/>
-                            <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="ItD-I0-rqd"/>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="7" id="Ja5-gn-h9g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UUd-Yo-OMg" secondAttribute="trailing" constant="16" id="NZd-qK-aV0"/>
+                            <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="67l-Lq-nnF" secondAttribute="trailing" constant="39" id="Nb0-k9-Tgm"/>
                             <constraint firstItem="UmR-Mu-mVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Oqr-PC-Sxq"/>
-                            <constraint firstItem="GUN-rD-ftz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qjp-tR-jK0"/>
-                            <constraint firstItem="GUN-rD-ftz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tmt-Tm-IeX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UmR-Mu-mVc" secondAttribute="trailing" constant="16" id="Yrm-cC-Qhe"/>
-                            <constraint firstItem="GUN-rD-ftz" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="8" id="e0m-lw-0MI"/>
+                            <constraint firstItem="UmR-Mu-mVc" firstAttribute="top" secondItem="67l-Lq-nnF" secondAttribute="bottom" constant="8" symbolic="YES" id="h0L-8m-Gbc"/>
+                            <constraint firstItem="67l-Lq-nnF" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="7" id="kxf-aI-r2C"/>
+                            <constraint firstItem="67l-Lq-nnF" firstAttribute="leading" secondItem="Tcm-4Y-38C" secondAttribute="trailing" constant="6" id="wqb-aU-Mfd"/>
+                            <constraint firstItem="Tcm-4Y-38C" firstAttribute="top" secondItem="UUd-Yo-OMg" secondAttribute="bottom" constant="13" id="ybe-LB-jWP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="awesomeImage" destination="UmR-Mu-mVc" id="3ku-um-16x"/>
                         <outlet property="messageLabel" destination="UUd-Yo-OMg" id="de7-N4-3bW"/>
+                        <outlet property="soundSwitch" destination="67l-Lq-nnF" id="lT7-Us-mad"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="116.00985221674877"/>
+            <point key="canvasLocation" x="136.875" y="115.14084507042254"/>
         </scene>
     </scenes>
 </document>
